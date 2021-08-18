@@ -23,4 +23,4 @@
 
 [O que é CTD da Digital House?](https://certifiedtechdeveloper.com.br/)
 
-![sds](de_MercadoLivre_e_Globant_por_DigitalHouse.png)
+![CTD](de_MercadoLivre_e_Globant_por_DigitalHouse.png)
