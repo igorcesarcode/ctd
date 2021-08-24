@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&family=Ubuntu:wght@500&display=swap');
+:root{
+    --text-color:rgb(4, 255, 79);
+    --text-color-p:rgb(236, 200, 235);
+    --bg-color:rgb(6, 252, 47);;
+}
+
+body{
+    background-color: rgb(19, 19, 17);
+}
+
+h1{
+    font-size: xx-large;
+    font-family: 'Fira Code', monospace;
+    color:var(--text-color);
+}
+h2{
+    font-size: xx-large;
+    font-family: 'Fira Code', monospace;
+    color:var(--text-color);
+}
+.job-title{
+    font-size: large;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--text-color);
+}
+
+
+p{
+    font-family: 'Ubuntu', sans-serif;
+    color:var(--text-color-p);
+    font-size: large;
+}
+#high{
+    font-family: 'Fira Code', monospace;
+    color:var(--text-color);
+}
+
+ul{
+    background-color:var(--bg-color);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a:link {
+    color: rgb(184, 13, 93);
+  }
+  
