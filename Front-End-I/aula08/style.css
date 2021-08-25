@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
+
+:root{
+    --bg:#121214;
+    --bg-block:rgba(232,234,237,.14);
+    --text-inline:#e1e1e6;
+    --link-active:#9466ff;
+    --style-text:#8257e5;
+    --borders: #323238;
+    --darker-gradient: linear-gradient(90deg,#202024,rgba(32,32,36,0.25));
+    --cap-slide: url('https://legadodamarvel.com.br/wp-content/uploads/2019/04/Vingadores-Ultimato-Diretores-legadodamarvel.jpg');
+}
+
+body{
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide{
+    width: 99%;
+    height: 200px;
+    background-image: var(--cap-slide);
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.bloco{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: var(--darker-gradient);
+    height: 200px;
+    width: 90%;
+    border-radius: 15px;
+    border: 2px solid var(--borders);
+    padding-left: 20px;
+}
+.tituloPrincipal{
+    font-family: 'Fira Code', monospace;
+    color: var(--text-inline);
+}
+
+.tituloSegundario{
+    font-family: 'Fira Code', monospace;
+    color: var(--style-text);  
+}
+.texto{
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--text-inline);
+}
+
+footer{
+    width: 99%;
+    height: 50px;  
+    color: var(--text-inline);
+    margin-top: 30px;
+    border-top: 2px solid var(--borders);
+    background-color:var(--darker-gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
