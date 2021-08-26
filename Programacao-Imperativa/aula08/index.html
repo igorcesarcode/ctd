@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cálculo IMC</title>
+</head>
+<body>
+    <h1>Cálculo IMC</h1>
+    
+    <h2>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</h2>
+    
+    <p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.<br>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.</p>
+    
+    <button onclick="inputCalculo()">Calcular IMC</button>
+
+    <script type="text/javascript">
+        /*
+            Nível I - Refatorando
+            O que pode ser feito para melhorar a legibilidade¹ do código?
+
+            ¹Facilidade de entendimento do algoritimo gerado no código. 
+
+            Nível II - Adicionando novas funcionalidades
+            O usuário com sobrepeso, obsidade e/ou obsidade grave deverão:
+            - Receber uma alerta recomendando uma consulta com nutricionista (Boleano - true ou false);
+                - Caso a resposta seja sim, preencherá com:
+                    - Seu nome;
+                    - Dia da semana que pretende se consultar;
+                    - O horário do dia que pretende se consultar;
+                    - Agradecer o usuário pelo nome e informar o dia e horário da consulta com o Dra. Luana Nagydai.
+                - Caso a resposta seja não:
+                    - Receberá um pedido de agradecimento.
+
+            Nível III - Correção de error 
+            (🍒 do bolo)
+            Recebemos um pedido de alteração da clínica:
+            O usuário com sobrepeso, obsidade e/ou obsidade grave deverão:
+            - Receber uma alerta recomendando uma consulta com nutricionista (Boleano - true ou false);
+                - Caso a resposta seja sim, preencherá com:
+                    - Seu nome;
+                    - Dia da semana que pretende se consultar;
+                    - O horário do dia que pretende se consultar;
+                    (ajuste)
+                    - Confirmar com o usuário se o dia e o horário estão corretos:
+                        Caso a resposta seja sim:
+                        - Segue o fluxo normalmente.
+                    - Caso a resposta seja não:
+                        - Dia da semana que pretende se consultar;
+                        - O horário do dia que pretende se consultar;
+                    (fim do ajuste)
+                    - Agradecer o usuário pelo nome e informar o dia e horário da consulta com o Dra. Luana Nagydai.
+                - Caso a resposta seja não:
+                    - Receberá um pedido de agradecimento.
+
+                    Sala 5: Angelica Lirio, Igor Cesar, Marina Fachinello, William Brito, Felipe Bertevello
+
+        */
+       var peso, altura, resultadoImc, nome = null;
+
+       function inputCalculo (){
+            peso = prompt('Qual seu peso?');
+            altura = prompt('Qual sua Altura?');
+            nome = prompt('Qual seu nome ?');
+            calcularImc();
+            classificacaoImc();
+        }
+
+        function calcularImc() {
+            resultadoImc = peso / (altura * altura);
+        }
+
+        function classificacaoImc(){
+            if(resultadoImc <= 18.5){
+                alert(`Seu IMC é iqual a: ${resultadoImc.toFixed(2)} e sua classificação é: MAGREZA`);
+            }
+            else if(resultadoImc >= 18.5 && resultadoImc <= 24.9){
+                alert(`Seu IMC é iqual a: ${resultadoImc.toFixed(2)} e sua classificação é: NORMAL`);
+            }
+            else if(resultadoImc >= 25 && resultadoImc <=29.9){
+                alert(`Seu IMC é iqual a: ${resultadoImc.toFixed(2)} e sua classificação é: SOBREPESO`);
+                alertaNutricionista()
+            }
+            else if(resultadoImc >=30 && resultadoImc <= 39.9){
+                alert(`Seu IMC é iqual a: ${resultadoImc.toFixed(2)} e sua classificação é: OBESIDADE`);
+                alertaNutricionista()
+            }
+            else{
+                alert(`Seu IMC é iqual a: ${resultadoImc.toFixed(2)} e sua classificação é: OBESIDADE GRAVE`);
+                alertaNutricionista()
+            }
+        }
+
+
+        let diaDaSemana = null;
+        let hora = null;
+        function alertaNutricionista(){
+            alert('Alerta de marca consulta');
+            var confimacao, confirmacaoHorario = null
+            let despedida = 'Muito obrigado por usar o aplicativo'
+            confimacao = window.confirm('Você quer ir na Nutricionista?');
+            
+            if (confimacao){
+                diaDaSemana = prompt('qual dia da semana?');
+                hora = prompt('Qual o hora que você quer a consulta?');
+
+                confirmacaoHorario = window.confirm(`Sua consulta realmente é no  no dia: ${diaDaSemana} as ${hora} horas ?`)
+                
+                if(confirmacaoHorario){
+                    alert(`Ola ${nome}, Sua consulta esta confirmado no dia: ${diaDaSemana} as ${hora} horas, com o Dra. Luana Nagydai.`)
+                    
+                }else{
+                    alertaNutricionista()
+                }
+
+            }else{
+                alert(despedida)
+            }
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
+index.html
+5 KB
