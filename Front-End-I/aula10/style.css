@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --bg: #121214;
+  --text-inline: #ffffff;
+  --link-active: #9466ff;
+  --style-text: #8257e5;
+  --cap-slide: url("https://legadodamarvel.com.br/wp-content/uploads/2019/04/Vingadores-Ultimato-Diretores-legadodamarvel.jpg");
+}
+
+body {
+  background-color: var(--bg);
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  background-image: var(--cap-slide);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  background-color: var(--link-active);
+  border: none;
+  color: var(--text-inline);
+  padding: 15px;
+  margin: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: var(--style-text);
+  cursor: pointer;
+}
+
+.bloco {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: var(--darker-gradient);
+  height: 200px;
+  width: 90%;
+  border-radius: 15px;
+  border: 2px solid var(--borders);
+  padding-left: 20px;
+}
+.tituloPrincipal {
+  font-family: "Fira Code", monospace;
+  text-shadow: 2px 2px 2px black;
+  
+  color: var(--text-inline);
+  font-size: 100px;
+}
+
+.tituloSegundario {
+  font-family: "Fira Code", monospace;
+  text-shadow: 2px 2px 2px black;
+  
+  color: var(--style-text);
+  font-size: 70px;
+
+}
+.texto {
+  font-family: "Ubuntu", sans-serif;
+  color: var(--text-inline);
+  text-shadow: 2px 2px 2px black;
+}
+
+footer {
+  width: 99%;
+  height: 50px;
+  color: var(--text-inline);
+  margin-top: 30px;
+  border-top: 2px solid var(--borders);
+  background-color: var(--darker-gradient);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
