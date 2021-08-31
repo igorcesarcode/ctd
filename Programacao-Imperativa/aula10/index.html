@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mesa de Trabalho - Trabalhando com coleções</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+        /*
+            1. Crie uma função para buscar qual o index da primeira palavra Mengo.
+            2. Crie uma função para substituir o nome Mengo por outro nome de Time.
+            3. Crie uma função para contar quantos caracteres existem no texto. 
+            Obs.: Contando com apenas os espaços entre as letras, espaços entre paragrafos não devem ser calculados).
+            4. Crie uma função para contar quantas palavras existem no texto.
+
+            Quais recursos?
+            * function(){}
+            * console.log(); ou alert();
+            * lenght para saber o comprimento.
+            * indexOf() para saber se algo existe e a partir de que index.
+            * trim() para remover espaços em branco.
+            * splite() seleciona uma faixa de caracteres.
+            * replace() para alterar uma parte do texto.
+        */
+        var letraDaMusica = `
+            Domingo, eu vou ao Maracanã
+            Vou torcer pro time que sou fã
+            Vou levar foguetes e bandeira
+            Não vai ser de brincadeira
+            Ele vai ser campeão
+                   
+            Não quero cadeira numerada
+            Vou ficar na arquibancada
+            Pra sentir mais emoção
+
+            Porque meu time bota pra ferver
+            E o nome dele são vocês que vão dizer
+            Porque meu time bota pra ferver
+            E o nome dele são vocês que vão dizer
+
+            (Ô, ô, ô)
+            Ô, ô, ô, ô, ô, ô, ô, ô, ô, ô, ô, ô Mengo!
+            Ô, ô, ô, ô, ô, ô, ô, ô, ô, ô, ô, ô Mengo!
+        `;
+
+        // Crie as funções a partir daqui.
+
+        function buscarMengo(){
+            console.log(letraDaMusica.indexOf("Mengo"))
+        }
+        function substituirMengo(){
+            
+            console.log(letraDaMusica.replaceAll("Mengo", "teste"))
+        }
+        
+        function contarCaracteres(){
+            console.log(letraDaMusica.trim().length);
+        }
+
+        function contarPalavras(){
+            console.log(letraDaMusica.trim().split(" ").length+1);
+        }
+
+        buscarMengo();
+        substituirMengo();
+        contarCaracteres();
+        contarPalavras();
+
+
+    </script>
+</body>
+</html>
