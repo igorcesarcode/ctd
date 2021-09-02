@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+:root {
+  --bg: #0d1b2a;
+  --bg-sub: #1b263b;
+  --red: #e74c3c;
+  --text: #1dd1a1;
+  --text-dark: #10ac84;
+  --border: #10ac858f;
+}
+
+
+h1,
+h2,
+h3 {
+    font-family: "Ubuntu", sans-serif;
+    color: var(--text);
+    font-size: xx-large;
+}
+
+p,a {
+    font-family: "Roboto", sans-serif;
+    color: var(--text);
+}
+
+.main {
+  background-color: var(--bg);
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding-top: 65px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    background: var(--bg-sub);
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    border-bottom: 2px solid var(--border);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .menu-options {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  
+  }
+  .menu-options:hover {
+    color: var(--text);
+    border-bottom: 1px solid var(--style-text);
+  }
+
+.capa{
+    background-image: url('https://http2.mlstatic.com/D_NQ_880138-MLA47307042196_082021-OO.webp');
+    width: 100%;
+    height: 250px;
+}
+.buscarProduto{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+.card {
+    background-color: var(--bg-sub);
+
+    border-radius: 16px;
+    border: 2px solid var(--border);
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px ;
+}
+.horizontal{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.vertical{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.grande{
+    width: 700px;
+    height: 100px;
+}
+.pequeno{
+    width: 224px;
+    height: 330px;
+}
+.card-sub{
+    width: 170px;
+    height: 90px;
+}
+
+
+.contato{
+    position: fixed;
+    left: 1;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+}
