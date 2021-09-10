@@ -65,7 +65,7 @@ img{
   }
 
 .capa{
-    background-image: url('https://http2.mlstatic.com/D_NQ_880138-MLA47307042196_082021-OO.webp');
+    background-repeat:no-repeat;
     width: 100%;
     height: 250px;
 }
