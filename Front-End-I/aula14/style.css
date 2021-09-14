@@ -73,7 +73,7 @@ select{
     line-height: 24px;
 }
 input[type='radio']{
-    display: none;
+    
 }
 input[type='radio']:after {
     width: 15px;
