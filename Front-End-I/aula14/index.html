@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 14</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="">
+      <h1>Escolha seu pedido</h1>
+      <fieldset>
+        <legend>Seu Dados</legend>
+
+        <div>
+          <label for="name" placeholder="Nome">Nome</label>
+          <input type="text" id="name" name="name" required/>
+        </div>
+
+        <div>
+          <label for="cpf">Cpf</label>
+          <input type="number" id="cpf" name="cpf" required/>
+        </div>
+
+        <div>
+          <label for="name">Endereço</label>
+          <input type="text" id="name" name="name" required/>
+        </div>
+        <div>
+
+      </fieldset>
+      <fieldset>
+        <legend>Escolha o seu doce</legend>
+        <label for="city">Tipo de Doce</label>
+        <select name="city" id="city">
+          <option value="1">Brigadeiro</option>
+          <option value="2">Jujuba</option>
+          <option value="3">Bombons Chocolate</option>
+          <option value="4">Doce de Goiabada</option>
+        </select>
+      </div>
+      <div>
+        <label for="comments">Comentários/Observações</label>
+        <div>
+          <textarea name="comments" id="comments"></textarea>
+        </div>
+      </div>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Forma de Pagamento</legend>
+
+        <input checked type="radio" name="formaPagamento" id="formaBoleto" >
+        <label for="formaBoleto">Boleto</label>
+        
+        <input type="radio" name="formaPagamento" id="formaCartao">
+        <label for="formaCartao">Cartão</label>
+
+        <input type="radio" name="formaPagamento" id="formaDinheiro">
+        <label for="formaDinheiro">Dinheiro</label>
+
+      </fieldset>
+
+
+      <button type="submit">Enviar</button>
+
+    </form>
+  </body>
+</html>

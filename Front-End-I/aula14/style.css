@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(246, 245, 245);
+}
+
+h1,legend{
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+}
+fieldset{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+legend{
+    border:none;
+
+}
+label{
+    font-size: large;
+    font-family: 'Fira Code', monospace;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 100vh;
+    background-color:white;
+    padding-top: 5%;
+}
+input{
+    height: auto;
+    font-family: 'Fira Code', monospace;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgb(62, 62, 62);
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    width: 100%;
+    padding: 12px 8px;
+}
+
+button{
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    border: 0px;
+    font-weight: normal;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(234, 29, 44);
+    font-family: 'Fira Code', monospace;
+}
+textarea#comments {
+    width: 100%;
+    padding: 12px 8px;
+    height: 150px;
+}
+select{
+    font-weight: normal;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-size: 18px;
+    line-height: 24px;
+}
+input[type='radio']{
+    display: none;
+}
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+
+
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: rgb(234, 29, 44);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
