@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #212124;
+        display:flex;
+        justify-content: center;
+      }
+      h1 {
+        color: #fff;
+      }
+
+      div {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(211, 208, 212);
+        margin-top: 40%;
+      }
+    </style>
+
+    <title>Aula 18</title>
+  </head>
+  <body>
+    <div>
+      <h1>Porem</h1>
+      <p>
+        lorem ipsum dolor lorem ipsum dolor sit amet, consectetur adip
+      </p>
+
+      <button onclick="mudarPagina()">Ir para outra pagina</button>
+    </div>
+
+
+<script>
+
+  function mudarPagina(){
+    let resultado = window.confirm("Você realmente quer sair?")
+
+    if(resultado){
+      window.location.href = 'https://www.google.com.br/'
+    }
+    else{
+      alert('Obrigado por ficar.')
+    }
+  }
+
+</script>
+  </body>
+</html>

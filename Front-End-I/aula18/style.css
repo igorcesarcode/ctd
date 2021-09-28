@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 400px 100%;
+}
+header{
+  background-color: red;
+}
+aside{
+  background-color:blue;
+}
+main{
+  background-color:blueviolet;
+}
+footer{
+  background-color: aqua;
+}

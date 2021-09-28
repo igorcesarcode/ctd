@@ -1,0 +1,24 @@
+h1 {
+  color: black;
+}
+h1:hover {
+  color: red;
+}
+
+p::first-letter {
+  font-size: 200%;
+  color: coral;
+}
+
+td:nth-child(2n) {
+  color: red;
+}
+input:disabled {
+    background-color: rgb(202, 202, 202);
+}
+input:enabled {
+    background: rgb(243, 244, 248);
+}
+input:focus {
+  background-color: cyan;
+}
